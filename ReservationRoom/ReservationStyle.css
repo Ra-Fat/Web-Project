@@ -36,7 +36,9 @@ a::after {
 a:hover::after {
     width: 100%; 
 }
-
+.lock1, .lock2{
+    display: none;
+}
 
 
 
@@ -910,6 +912,14 @@ a:hover::after {
     }
     .right-line{
         padding: 35px;
+    }
+    .lock1, .lock2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .unlock1, .unlock2{
+        display: none;
     }
 }
 @media (max-width:575px){
