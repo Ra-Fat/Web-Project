@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(180, 176, 176);
+}
+.Container-contact{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.contact-content{
+    background-color: #FFFFFF;
+    height: 500px;
+    border-radius: 8px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+.name-guest-house{
+    padding-top: 15px;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.header-tooltip1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-right: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+a{
+    color: black;
+}
+.fa-xmark{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.road-time{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.city-checkout{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 29px;
+}
+.road-clearify{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.location-map,.email-contact,.phone-contact{
+    font-size: 16px;
+    color: #BE9471;
+    margin-bottom: 8px;
+}
+.detail1{
+    font-size: 14px;
+    color: gray;
+    margin-top: 15px;
+}
+.detail2, .detail3{
+    color: gray;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.detail4{
+    color: gray;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.footer-tooltip2{
+    margin-top: 35px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    width: 150px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #293a41;
+}
+button:hover{
+    background-color: #1d292e;
+}
+@media (max-width: 768px) { /* For tablets */
+    .Container {
+        width: 90%;
+        padding: 10px;
+    }
+    .contact-content {
+        padding: 30px;
+    }
+    .footer-tooltip2{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+    .name-guest-house {
+        font-size: 18px;
+    }
+    .header-tooltip1 {
+        font-size: 16px;
+    }
+    .location-map,
+    .email-contact,
+    .phone-contact {
+        font-size: 14px;
+    }
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .footer-tooltip2{
+        margin-top: 0;
+    }
+    
+}
